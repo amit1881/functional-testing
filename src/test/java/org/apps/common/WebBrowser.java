@@ -85,7 +85,7 @@ public class WebBrowser {
 	 * @return
 	 * @throws InterruptedException
 	 */
-	public MettlWebPage navigateToUrl(String url, String pageClassName) throws InterruptedException {
+	public WebPage navigateToUrl(String url, String pageClassName) throws InterruptedException {
 		driver.get(url);
 		Thread.sleep(3000);
 		return makeMettlWebPage(pageClassName);
@@ -219,10 +219,10 @@ public class WebBrowser {
 	 * @param pageClassName
 	 * @return
 	 */
-	public MettlWebPage makeMettlWebPage(String pageClassName) {
+	public WebPage makeMettlWebPage(String pageClassName) {
 		try {
-			Class<MettlWebPage> pageClass = (Class<MettlWebPage>) Class.forName(pageClassName);
-			MettlWebPage page = PageFactory.initElements(driver, pageClass);
+			Class<WebPage> pageClass = (Class<WebPage>) Class.forName(pageClassName);
+			WebPage page = PageFactory.initElements(driver, pageClass);
 			page.setBrowser(this);
 			return page;
 		} catch (Exception e) {

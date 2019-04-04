@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import com.mettl.page.MettlWebPage;
 
-public class PolicyLogin extends MettlWebPage {
+public class PolicyLogin extends WebPage {
 
 	@FindBy(id = "username-inputEl")
 	private WebElement userName;

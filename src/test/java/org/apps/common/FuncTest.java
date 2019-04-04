@@ -24,7 +24,7 @@ import org.testng.annotations.Listeners;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
-import com.mettl.helper.MettlContext;
+import org.func.helper.FuncContext;
 
 import net.minidev.json.JSONObject;
 
@@ -33,8 +33,8 @@ import net.minidev.json.JSONObject;
  * 
  * @author Saarthak
  */
-@Listeners(MettlTestNGListener.class)
-public abstract class MettlTest {
+@Listeners(FuncTestNGListener.class)
+public abstract class FuncTest {
 	protected WebBrowser browser;
 	protected JSONObject testMethodData;
 	protected Map<String, JSONObject> testClassData;

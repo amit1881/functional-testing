@@ -14,7 +14,7 @@ import com.mettl.helper.MettlContext;
  * @author guneet
  * 
  */
-public class MettlTestNGListener implements ITestListener {
+public class FuncTestNGListener implements ITestListener {
 
     public void onFinish(ITestContext arg0) {
         // TODO Auto-generated method stub

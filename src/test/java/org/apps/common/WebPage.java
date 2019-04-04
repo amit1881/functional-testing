@@ -11,7 +11,7 @@ import com.mettl.common.WebBrowser;
  * 
  * @author Ketan
  */
-public abstract class MettlWebPage {
+public abstract class WebPage {
     protected static WebBrowser webBrowser;
     protected ColorFormatConverter colorFormatConverter = new ColorFormatConverter();
     public abstract boolean isValid();

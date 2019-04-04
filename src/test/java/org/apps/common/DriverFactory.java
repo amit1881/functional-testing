@@ -12,13 +12,13 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.mettl.helper.MettlContext;
+import org.func.helper.FuncContext;
 
 /**
- * Web Driver Factory class that is responisble for making a web driver instance
+ * Web Driver Factory class that is responsible for making a web driver instance
  * based on the configured browser
  * 
- * @author Ketan
+ * @author amit
  */
 public class DriverFactory {
 
