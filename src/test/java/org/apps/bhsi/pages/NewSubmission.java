@@ -1,6 +1,6 @@
 package org.apps.bhsi.pages;
 
-import com.mettl.page.MettlWebPage;
+import org.apps.common.pages.WebPage;
 
 public class NewSubmission extends WebPage{
 

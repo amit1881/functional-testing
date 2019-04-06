@@ -1,7 +1,6 @@
 package org.func.helper;
 
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.Properties;
 
 public class FuncUtils {
@@ -21,4 +20,13 @@ public class FuncUtils {
 		return loadProperties(obj.getClass(), prop, configs);
 	}
 
+	public static String getTestProperty(Properties properties, String key) throws Throwable {
+        try {
+            return properties.getProperty(key);
+        } catch (Throwable e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
+	
 }

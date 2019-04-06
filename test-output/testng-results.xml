@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Suite Initialized with the following properties]]>
+    </line>
+    <line>
+      <![CDATA[****************************************************]]>
+    </line>
+    <line>
+      <![CDATA[* BROWSER_NAME -> Chrome]]>
+    </line>
+    <line>
+      <![CDATA[* APP_ENVIRONMENT -> staging]]>
+    </line>
+    <line>
+      <![CDATA[****************************************************]]>
+    </line>
+    <line>
+      <![CDATA[Loading Test Configuration from: PolicyLoginTest....]]>
+    </line>
+    <line>
+      <![CDATA[Test Started : verifyTest]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="66662" started-at="2019-04-06T18:15:38Z" finished-at="2019-04-06T18:16:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="66662" started-at="2019-04-06T18:15:38Z" finished-at="2019-04-06T18:16:45Z">
+      <class name="org.apps.bhsi.tests.PolicyLoginTest">
+        <test-method status="PASS" signature="initializeSuite()[pri:0, instance:org.apps.bhsi.tests.PolicyLoginTest@2133c8f8]" name="initializeSuite" is-config="true" duration-ms="27" started-at="2019-04-06T23:45:38Z" finished-at="2019-04-06T23:45:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Suite Initialized with the following properties]]>
+            </line>
+            <line>
+              <![CDATA[****************************************************]]>
+            </line>
+            <line>
+              <![CDATA[* BROWSER_NAME -> Chrome]]>
+            </line>
+            <line>
+              <![CDATA[* APP_ENVIRONMENT -> staging]]>
+            </line>
+            <line>
+              <![CDATA[****************************************************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- initializeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.apps.bhsi.tests.PolicyLoginTest@2133c8f8]" name="beforeClass" is-config="true" duration-ms="30677" started-at="2019-04-06T23:45:38Z" finished-at="2019-04-06T23:46:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Loading Test Configuration from: PolicyLoginTest....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="policyLogin()[pri:0, instance:org.apps.bhsi.tests.PolicyLoginTest@2133c8f8]" name="policyLogin" is-config="true" duration-ms="35030" started-at="2019-04-06T23:46:09Z" finished-at="2019-04-06T23:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- policyLogin -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.apps.bhsi.tests.PolicyLoginTest@2133c8f8]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2019-04-06T23:46:44Z" finished-at="2019-04-06T23:46:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.apps.bhsi.tests.PolicyLoginTest.verifyTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started : verifyTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyTest()[pri:0, instance:org.apps.bhsi.tests.PolicyLoginTest@2133c8f8]" name="verifyTest" duration-ms="30" started-at="2019-04-06T23:46:44Z" finished-at="2019-04-06T23:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTest -->
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:org.apps.bhsi.tests.PolicyLoginTest@2133c8f8]" name="tearDownAfterClass" is-config="true" duration-ms="877" started-at="2019-04-06T23:46:44Z" finished-at="2019-04-06T23:46:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterClass -->
+      </class> <!-- org.apps.bhsi.tests.PolicyLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

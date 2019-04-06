@@ -9,7 +9,6 @@ import java.util.Set;
 /**
  * It will save some global information that we want to use across application
  * 
- * @author amit
  */
 public enum FuncContext {
 
@@ -30,6 +29,14 @@ public enum FuncContext {
 			cache.put(propName, propValue);
 		}
 	}
+	
+	public void setEntry(String key, Object value){
+		cache.put(key, value);
+	}
+	
+	public Object getEntry(String key) {
+		return cache.get(key);
+	}
 
 	public String getEntryAsString(String key) {
 		Object o = cache.get(key);
@@ -37,5 +44,14 @@ public enum FuncContext {
 			return null;
 
 		return o.toString();
+	}
+	
+	/**
+	 * Gets all the keys mapped in the cache
+	 * 
+	 * @return
+	 */
+	public Set<String> getEntryKeys () {
+		return cache.keySet();
 	}
 }

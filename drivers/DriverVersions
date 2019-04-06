@@ -1,0 +1,25 @@
+mac:
+	chromedriver:
+		version:2.37
+		arch:64
+	geckodriver:
+		version:0.16.1
+unix:
+	chromedriver:
+		version:2.30
+		arch:64
+	geckodriver:
+		version:0.16.1
+		arch:64
+win:
+	chromedriver:
+		version:73.0.3683.68
+		arch:32
+	geckodriver:
+		version:0.16.1
+		arch:64
+	IEDriverServer:
+		version:3.14.0
+		arch:64
+	MicrsoftWebDriver:
+		version:4.15063

@@ -1,8 +1,8 @@
 package org.apps.bhsi.pages;
 
+import org.apps.common.pages.WebPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import com.mettl.page.MettlWebPage;
 
 public class PolicyLogin extends WebPage {
 
@@ -25,7 +25,8 @@ public class PolicyLogin extends WebPage {
 
 		this.userName.sendKeys(userName);
 		this.password.sendKeys(password);
-		NewSubmission ns = (NewSubmission) webBrowser.makeMettlWebPage("apps.bhsi.pages.NewSubmission");
+		loginBtn.click();
+		NewSubmission ns = (NewSubmission) webBrowser.makeWebPage("org.apps.bhsi.pages.NewSubmission");
 		return ns;
 	}
 
