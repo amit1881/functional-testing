@@ -22,7 +22,6 @@ import org.func.helper.FuncUtils;
 @Listeners(FuncTestNGListener.class)
 public abstract class FuncTest {
 	protected WebBrowser browser;
-	protected String hostName;
 	/**
 	 * read from
 	 * $src/test/resources/${appEnvironment}/{testClassName}.properties
