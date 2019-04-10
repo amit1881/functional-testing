@@ -21,13 +21,13 @@ public class PolicyLogin extends WebPage {
 		return false;
 	}
 
-	public NewSubmission login(String userName, String password) {
+	public DashBoard login(String userName, String password) {
 
 		this.userName.sendKeys(userName);
 		this.password.sendKeys(password);
 		loginBtn.click();
-		NewSubmission ns = (NewSubmission) webBrowser.makeWebPage("org.apps.bhsi.pages.NewSubmission");
-		return ns;
+		DashBoard db = (DashBoard) webBrowser.makeWebPage("org.apps.bhsi.pages.DashBoard");
+		return db;
 	}
 
 }
