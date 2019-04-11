@@ -652,6 +652,19 @@ public class WebBrowser {
         }
         return result;
     }
+    
+    public Boolean isElementPresent(WebElement element, Integer timeout) {
+        setImpicitWait(timeout);
+        Boolean result = false;
+        try {
+            result = element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            Reporter.log("Element not found with locator : " + element);
+        } finally {
+            setImpicitWait(IMPLICIT_WAIT_TIME);
+        }
+        return result;
+    }
 
     /**
      * Get random String of specific length

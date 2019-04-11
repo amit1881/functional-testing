@@ -56,6 +56,7 @@ public abstract class FuncTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		FuncContext.INSTANCE.setEntry("browser", browser);
 	}
 
 	@BeforeMethod

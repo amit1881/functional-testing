@@ -75,7 +75,7 @@ public class DriverFactory {
         edgeOptions.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
         edgeOptions.setCapability("ignoreZoomSetting", true);
         edgeOptions.setCapability("nativeEvents", false);
-        System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "../MettlCommon/drivers/win/MicrosoftWebDriver.exe");
+        System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "drivers/win/MicrosoftWebDriver.exe");
         return new EdgeDriver(edgeOptions);
     }
 
@@ -90,15 +90,15 @@ public class DriverFactory {
         chromeOptions.addArguments("--use-fake-ui-for-media-stream");
         chromeOptions.addArguments("--start-maximized");
         chromeOptions.addArguments("--disable-timezone-tracking-option");
-        //File crx = new File("../MettlCommon/plugins/hkjemkcbndldepdbnbdnibeppofoooio_main.crx");
+        //File crx = new File("plugins/hkjemkcbndldepdbnbdnibeppofoooio_main.crx");
         //chromeOptions.addExtensions(crx);
 
         if (OSName.contains("win"))
             System.setProperty("webdriver.chrome.driver", "drivers/win/chromedriver.exe");
         else if (OSName.contains("mac"))
-            System.setProperty("webdriver.chrome.driver", "../MettlCommon/drivers/mac/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "drivers/mac/chromedriver");
         else
-            System.setProperty("webdriver.chrome.driver", "../MettlCommon/drivers/unix/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "drivers/unix/chromedriver");
         return new ChromeDriver(chromeOptions);
     }
 
@@ -121,9 +121,9 @@ public class DriverFactory {
         if (OSName.contains("win"))
             System.setProperty("webdriver.gecko.driver", "drivers/win/geckodriver.exe");
         else if (OSName.contains("mac"))
-            System.setProperty("webdriver.gecko.driver", "../MettlCommon/drivers/mac/geckodriver");
+            System.setProperty("webdriver.gecko.driver", "drivers/mac/geckodriver");
         else
-            System.setProperty("webdriver.gecko.driver", "../MettlCommon/drivers/unix/geckodriver");
+            System.setProperty("webdriver.gecko.driver", "drivers/unix/geckodriver");
 
         //Disable GeckoDriver logs to be printed to console
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");

@@ -15,6 +15,12 @@ public class DashBoard extends WebPage{
 		return false;
 	}
 	
+	public Boolean isNewSubmissionLinkVisible(){
+		Boolean elementPresence=webBrowser.isElementPresent(newSubmission, 60);
+		return elementPresence;
+		
+	}
+	
 	public NewSubmission startNewSubmission(){
 		newSubmission.click();
 		NewSubmission ns=(NewSubmission) webBrowser.makeWebPage("org.apps.bhsi.pages.NewSubmission");
