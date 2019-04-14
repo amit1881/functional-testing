@@ -1,13 +1,14 @@
 package org.apps.bhsi.tests;
 
-import org.apps.common.tests.FuncTest;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.apps.bhsi.pages.DashBoard;
-import org.apps.bhsi.pages.PolicyLogin;
 import static org.testng.Assert.assertTrue;
 
-public class PolicyLoginTest extends FuncTest{
+import org.apps.bhsi.pages.DashBoard;
+import org.apps.bhsi.pages.PolicyLogin;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.apps.common.tests.FuncTest;
+
+public class DashBoardTest extends FuncTest{
 	
 	PolicyLogin pl;
 	DashBoard db;
@@ -18,4 +19,9 @@ public class PolicyLoginTest extends FuncTest{
 		db=pl.login("bhunt", "password");
 	}
 	
+	@Test
+	public void verifyNewSubmissionLinkIsVisble(){
+		assertTrue(db.isNewSubmissionLinkVisible(),"new submission link is not visible");
+	}
+
 }
