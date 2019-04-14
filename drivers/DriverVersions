@@ -16,10 +16,10 @@ win:
 		version:73.0.3683.68
 		arch:32
 	geckodriver:
-		version:0.16.1
+		version:0.24.0
 		arch:64
 	IEDriverServer:
 		version:3.14.0
-		arch:64
+		arch:32(64 taking inputs very slow)
 	MicrsoftWebDriver:
 		version:4.15063
