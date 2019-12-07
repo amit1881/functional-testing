@@ -23,5 +23,10 @@ public class DashBoardTest extends FuncTest{
 	public void verifyNewSubmissionLinkIsVisble(){
 		assertTrue(db.isNewSubmissionLinkVisible(),"new submission link is not visible");
 	}
+	
+	@Test
+	public void verifyNewSubmissionLinkIsVisble1(){
+		assertTrue(db.isNewSubmissionLinkVisible1(),"new submission link is not visible");
+	}
 
 }

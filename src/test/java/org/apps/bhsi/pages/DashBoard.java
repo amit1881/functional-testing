@@ -8,6 +8,9 @@ public class DashBoard extends WebPage{
 	
 	@FindBy(linkText="New Submission")
 	private WebElement newSubmission;
+	
+	@FindBy(linkText="NewSubmission")
+	private WebElement newSubmission1;
 
 	@Override
 	public boolean isValid() {
@@ -17,6 +20,12 @@ public class DashBoard extends WebPage{
 	
 	public Boolean isNewSubmissionLinkVisible(){
 		Boolean elementPresence=webBrowser.isElementPresent(newSubmission, 60);
+		return elementPresence;
+		
+	}
+	
+	public Boolean isNewSubmissionLinkVisible1(){
+		Boolean elementPresence=webBrowser.isElementPresent(newSubmission1, 60);
 		return elementPresence;
 		
 	}
