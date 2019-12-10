@@ -16,7 +16,7 @@ public class DashBoardTest extends FuncTest{
 	@BeforeClass
 	public void policyLogin() throws Throwable{
 		pl=(PolicyLogin) browser.navigateToUrl(getTestProperty("POLICY_SYSTEM_URL"), "org.apps.bhsi.pages.PolicyLogin");
-		db=pl.login("bhunt", "password");
+		db=pl.login("uname", "pwd");
 	}
 	
 	@Test
